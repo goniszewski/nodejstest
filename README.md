@@ -56,6 +56,16 @@ Code is in this repository.
 
 **Find out why, fix it and write report on why did it happen.**
 
+### The report
+
+Findings:
+
+1. ID of the user was `0`, not `1`
+2. There was wrong module imported: unfinished `models/index.js` instead of mocked `models/users.js`
+3. `if` statement was changed from `user_id === 0` to `user_id === 1`
+ 
+[Commit with changes.](https://github.com/goniszewski/nodejstest/commit/c3b2ac02bb64dfc1d2afaafb181adf253c2f9fc8)
+
 ## Create something whilst learning something new
 
 For this task you will need your personal account in AWS. Please create one if you don't have it yet (do not worry about costs, everything you do here will covered by AWS Free Tier).
