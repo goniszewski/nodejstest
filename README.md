@@ -3,34 +3,51 @@
 ## Basic knowledge questions
 
 - What are Promises in Node.js?
+  - _It's a function that can be resolved or rejected with the use of callbacks._
 
 - What is callback hell?
+  - _We're dealing with so called 'callback hell' when there's multiple promise functions nested in each other, and we heave to pass down and deal with all their callbacks._
 
 - What tools can be used to assure consistent style?
+  - _Eg Prettier, Eslint, Beautify._
 
 - What is REPL? What purpose it is used for?
+  - _It's a simple programming enviroment that is implemented in some languages (Bash, Python, Node). It can be used for simple operations, running tests or debugging._
 
 - What is the difference between Asynchronous and Non-blocking?
+  - _Async code gives you a Promise which you can await, and get for eg some data fetched from API. Non-blocking code when is executed doesn't block the execution loop of application, and is eventually executed without returning any response._
 
 - List types of Http requests supported by Node.js?
+  - _GET, POST, PATCH, PUT, DELETE, HEAD, COPY, OPTIONS_
 
 - Is Node.js entirely based on a single-thread?
+  - _No, event-driven async operations are handled by multi-threaded libuv module utilized by Node.js_
 
-- What is your favourite HTTP framework and why?
+- What is your favourite HTTP framework and why? 
+  - _My favorite framework is Nestjs because it is well thought and structured, promotes best practices, comes with vast support for most common uses (integrated Multer, ORM, middlewares) and is fully written in TypeScript._
 
 - What is difference between JavaScript and Node.js?
+  - _JS is a programming language when Node.js is a JS runtime enviroment (which uses V8 engine to run JS on server). Some global variables, like __document__ or __window__ can be only used in JS running in browser, while for eg __process__ is used only in Node_
 
 - What is TypeScript? Do you use it? Why / why not?
+  - _TS is a superset of JS that runs on Node.js and provides support for strong typechecking_
 
 - What are the key differences between regular and arrow functions?
+  - _Arrow functions doesn't have their own __this__, they canot be used as constructors, and they can use implicit return feature when used as one-liner (without curly braces)_
 
 - What is destructuring?
+  - _Destructuring is a process of isolating objects/values from objects and arrays. Examples:_
+  ```js
+  const [val1, val2] = ["val1", "val2"];
+  const {val1, val2} = {val1: "val1", val2: "val2"};
+  ```
 
 - Explain the difference:
 ```ts
 const a: string = "hello";
 const a = "hello" as string;
 ```
+  - _First one provides type for a variable, and second one overrites it_
 
 ## Problem solving
 
