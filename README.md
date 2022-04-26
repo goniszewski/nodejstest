@@ -79,4 +79,4 @@ For this task you will need your personal account in AWS. Please create one if y
 Please create a new GitLab/GitHub repository, upload your lambda code in there and share link to the repo with us.
 Repository should also contain a README.md with URLs to your API GET & POST methods and explanation about how to use them (exact paths, example body for POST method).
 
-_Files and README.md for this task are placed under `lambda_functions/` directory within this repository.
+_Files and README.md for this task are placed under `lambda_functions/` directory within this repository._
